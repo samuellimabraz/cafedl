@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>br.deeplearning4java</groupId>
-    <artifactId>DeepLearning4Java</artifactId>
+    <groupId>br.cafedl</groupId>
+    <artifactId>cafedl</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>DeepLearning4Java</name>
-    <description>DeepLearning4Java</description>
+    <name>cafedl</name>
+    <description>cafedl</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -212,7 +212,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>br.deeplearning4java.game.controller.App</mainClass>
+                            <mainClass>br.cafedl.game.controller.App</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

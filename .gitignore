@@ -75,4 +75,4 @@ build/
 .bin
 *.csv
 .csv
-/src/main/resources/br/deeplearning4java/neuralnetwork/examples/data/
+/src/main/resources/br/cafedl/neuralnetwork/examples/data/

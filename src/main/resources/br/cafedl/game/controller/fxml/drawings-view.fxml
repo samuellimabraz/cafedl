@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cafedl.game.controller.DrawingsController">
+    <VBox alignment="TOP_CENTER" layoutY="48.0" prefHeight="562.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="48.0">
+        <Label alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT" prefHeight="55.0" prefWidth="71.0" text="Categories" textAlignment="CENTER" underline="true" wrapText="true" />
+        <VBox fx:id="categoryButtonsVBox" alignment="CENTER" prefHeight="533.0" prefWidth="200.0" spacing="10.0" />
+    </VBox>
+
+    <ScrollPane fitToWidth="true" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <GridPane fx:id="drawingsGridPane" hgap="10.0" vgap="10.0" />
+    </ScrollPane>
+    <Button fx:id="backButton" layoutX="14.0" layoutY="10.0" text="Back" style="-fx-text-fill: #f0f0f0; -fx-background-color: #ffd139;" onAction="#handleBackButtonAction">
+      <effect>
+         <DropShadow>
+            <color>
+               <Color red="0.1315789520740509" green="0.12365984171628952" blue="0.12365984171628952" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Button>
+</AnchorPane>

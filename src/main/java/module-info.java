@@ -1,4 +1,4 @@
-module br.deeplearning4java {
+module br.cafedl {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -23,21 +23,21 @@ module br.deeplearning4java {
     requires org.mongodb.driver.sync.client;
     requires JMathPlot;
 
-    exports br.deeplearning4java.game.controller;
-    opens br.deeplearning4java.game.controller to javafx.fxml;
-    exports br.deeplearning4java.neuralnetwork.core.models;
-    exports br.deeplearning4java.neuralnetwork.core.layers;
-    exports br.deeplearning4java.neuralnetwork.examples.classification.image;
-    exports br.deeplearning4java.neuralnetwork.examples.classification.image.mnist;
-    exports br.deeplearning4java.neuralnetwork.examples.classification.image.qdraw;
+    exports br.cafedl.game.controller;
+    opens br.cafedl.game.controller to javafx.fxml;
+    exports br.cafedl.neuralnetwork.core.models;
+    exports br.cafedl.neuralnetwork.core.layers;
+    exports br.cafedl.neuralnetwork.examples.classification.image;
+    exports br.cafedl.neuralnetwork.examples.classification.image.mnist;
+    exports br.cafedl.neuralnetwork.examples.classification.image.qdraw;
 
-    opens br.deeplearning4java.game.model to org.hibernate.orm.core;
-    opens br.deeplearning4java.game.model.database to org.hibernate.orm.core;
-    opens br.deeplearning4java.neuralnetwork.core.activation to morphia.core;
-    opens br.deeplearning4java.neuralnetwork.core.layers to morphia.core;
-    opens br.deeplearning4java.neuralnetwork.core.models to morphia.core;
-//    opens br.deeplearning4java.neuralnetwork.core.optimizers to morphia.core;
-//    opens br.deeplearning4java.neuralnetwork.core.train to morphia.core;
-//    opens br.deeplearning4java.neuralnetwork.core.losses to morphia.core;
-    opens br.deeplearning4java.neuralnetwork.database to morphia.core;
+    opens br.cafedl.game.model to org.hibernate.orm.core;
+    opens br.cafedl.game.model.database to org.hibernate.orm.core;
+    opens br.cafedl.neuralnetwork.core.activation to morphia.core;
+    opens br.cafedl.neuralnetwork.core.layers to morphia.core;
+    opens br.cafedl.neuralnetwork.core.models to morphia.core;
+//    opens br.cafedl.neuralnetwork.core.optimizers to morphia.core;
+//    opens br.cafedl.neuralnetwork.core.train to morphia.core;
+//    opens br.cafedl.neuralnetwork.core.losses to morphia.core;
+    opens br.cafedl.neuralnetwork.database to morphia.core;
 }
