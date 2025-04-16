@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?scenebuilder-stylesheet url="styles.css"?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="AnchorPane" prefHeight="620.0" prefWidth="770.0" stylesheets="@../css/menu-style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.cafedl.game.controller.MenuController">
+    <Button fx:id="Draws" cache="true" layoutX="314.0" layoutY="440.0" mnemonicParsing="false" onAction="#handleDrawsButtonAction" prefHeight="39.0" prefWidth="142.0" style="-fx-text-fill: #f0f0f0; -fx-background-color: #ffd139;" text="View Draws" textAlignment="CENTER" underline="true">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <font>
+            <Font size="14.0" />
+        </font>
+        <effect>
+            <DropShadow radius="8.5175" width="15.07">
+                <color>
+                    <Color red="0.34210526943206787" green="0.3389376103878021" blue="0.3389376103878021" />
+                </color>
+            </DropShadow>
+        </effect>
+    </Button>
+    <Button fx:id="startButton" cache="true" layoutX="314.0" layoutY="485.0" mnemonicParsing="false" onAction="#handleStartButtonAction" prefHeight="39.0" prefWidth="142.0" style="-fx-text-fill: #f0f0f0;" text="Let's Draw!" textAlignment="CENTER" underline="true">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+        <font>
+            <Font size="14.0" />
+        </font>
+      <effect>
+         <DropShadow radius="8.5175" width="15.07">
+            <color>
+               <Color red="0.34210526943206787" green="0.3389376103878021" blue="0.3389376103878021" />
+            </color>
+         </DropShadow>
+      </effect>
+    </Button>
+    <ImageView fitHeight="369.0" fitWidth="529.0" layoutX="121.0" layoutY="44.0">
+        <Image url="@../images/logo.png" />
+    </ImageView>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
