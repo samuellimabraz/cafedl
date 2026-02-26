@@ -6,9 +6,10 @@ As a project for the Software Design and Databases courses at university, I crea
 
 Because of this, I decided to create a DeepLearning "library" from scratch in Java and use it in the game. By employing the main design patterns and best practices, I was inspired by the  [Keras](https://keras.io/) library and its Sequential API to create different architectures with the classic layers and operations of a neural network.
 
-In the scope of databases, I used [MongoDB](https://www.mongodb.com/pt-br/lp/cloud/atlas/try4?utm_source=bing&utm_campaign=search_bs_pl_evergreen_atlas_core_prosp-brand_gic-null_amers-br_ps-all_desktop_eng_lead&utm_term=mongodb%20com&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511&adgroup=1209463260064162&msclkid=af01409a30a0127f01b62603654a6877?utm_source=bing&utm_campaign=search_bs_pl_evergreen_atlas_core_prosp-brand_gic-null_amers-br_ps-all_desktop_eng_lead&utm_term=mongodb%20com&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204511&adgroup=1209463260064162&msclkid=af01409a30a0127f01b62603654a6877) and [Morphia](https://github.com/MorphiaOrg/morphia) for Object Document Mapping (ODM) and to persist the trained models.
+In the scope of databases, I used [MongoDB](https://www.mongodb.com/) and [Morphia](https://github.com/MorphiaOrg/morphia) for Object Document Mapping (ODM) and to persist the trained models.
 
 ---
+
 ## Neural Netowork
 
 The "library" uses the [ND4J](https://deeplearning4j.konduit.ai/nd4j/tutorials/quickstart) library for tensor and matrix manipulation, utilizing NDArray as the main data structure. Similar to Numpy, the library allows for vectorized and efficient operations, enabling its use in somewhat more complex applications. There are certain redundancies in using this library, as it already possesses many of the operations and serves as the foundation for the algebraic operations of [DL4J](https://github.com/deeplearning4j/deeplearning4j). The idea was to implement the relevant mathematical parts while taking advantage of the data structure it provides.
