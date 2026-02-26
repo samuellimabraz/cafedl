@@ -7,8 +7,8 @@ import br.cafedl.neuralnetwork.data.Util;
 import br.cafedl.neuralnetwork.database.NeuralNetworkService;
 import org.nd4j.linalg.api.ndarray.INDArray;
 
-import javax.persistence.Entity;
-import javax.persistence.Transient;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Transient;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;

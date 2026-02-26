@@ -1,7 +1,7 @@
 package br.cafedl.game.model;
 
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Timer;
 import java.util.TimerTask;
 

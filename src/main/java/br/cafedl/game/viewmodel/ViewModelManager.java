@@ -6,7 +6,7 @@ import br.cafedl.game.controller.GameController;
 import br.cafedl.game.controller.TransitionController;
 import br.cafedl.game.model.database.PersistenceManager;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 public class ViewModelManager {
     private static ViewModelManager instance = new ViewModelManager();

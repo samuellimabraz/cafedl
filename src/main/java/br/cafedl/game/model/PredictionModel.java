@@ -2,7 +2,7 @@ package br.cafedl.game.model;
 
 import br.cafedl.game.model.database.StringListConverter;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity

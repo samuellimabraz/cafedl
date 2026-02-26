@@ -12,7 +12,10 @@ import dev.morphia.query.filters.Filters;
 import java.util.List;
 
 public class NeuralNetworkService {
-    private final static String MONGODB_URI = System.getenv("MONGODB_URI");
+    private final static String DEFAULT_MONGODB_URI = "mongodb://localhost:27017/deeplearning4java";
+    private final static String MONGODB_URI = System.getenv("MONGODB_URI") != null
+            ? System.getenv("MONGODB_URI")
+            : DEFAULT_MONGODB_URI;
     private final Datastore datastore;
 
     public NeuralNetworkService() {

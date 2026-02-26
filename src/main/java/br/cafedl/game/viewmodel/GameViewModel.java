@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Optional;
 
 import javax.imageio.ImageIO;
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 public class GameViewModel extends ViewModel {
     private final GameController controller;

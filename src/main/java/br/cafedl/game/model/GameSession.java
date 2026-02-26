@@ -3,7 +3,7 @@ package br.cafedl.game.model;
 import br.cafedl.game.model.database.GeolocationUtil;
 import br.cafedl.game.viewmodel.GameViewModel;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
