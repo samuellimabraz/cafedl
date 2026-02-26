@@ -67,6 +67,9 @@ build/
 .DS_Store
 *.ipr
 
+### Cursor ###
+.cursor/
+
 *.npy
 .npy
 *.npz

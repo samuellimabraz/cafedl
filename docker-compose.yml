@@ -1,0 +1,37 @@
+services:
+  mariadb:
+    image: mariadb:11
+    container_name: cafedl-mariadb
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpassword
+      MARIADB_DATABASE: quickdraw
+      MARIADB_USER: quickdraw
+      MARIADB_PASSWORD: quickdraw
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  mongodb:
+    image: mongo:7
+    container_name: cafedl-mongodb
+    environment:
+      MONGO_INITDB_DATABASE: deeplearning4java
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  mariadb_data:
+  mongodb_data:
